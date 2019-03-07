@@ -21,13 +21,13 @@ export default {
     flex: 2
   },
   textWish1: {
-    marginTop: 50,
+    marginTop: 30,
     fontSize: 40,
     fontWeight: "500",
     textAlign: "center"
   },
   textWish2: {
-    marginTop: 100,
+    marginTop: 30,
     fontSize: 30,
     fontWeight: 500,
     fontStyle: "italic",
@@ -60,5 +60,11 @@ export default {
   },
   imageRight: {
     flex: 1
+  },
+  fullname: {
+    fontSize: 50,
+  },
+  wishContent: {
+    fontSize: 50,
   }
 };

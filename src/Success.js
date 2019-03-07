@@ -14,7 +14,7 @@ const dataUser = {
     name: "Chị Linh Hoài",
     avatar:
       "https://scontent.fsgn2-2.fna.fbcdn.net/v/t1.15752-9/53891004_252841032332252_3620895595054497792_n.jpg?_nc_cat=103&_nc_oc=AQmtsfydUok_58piOnV_my46tKNzcVKCWoIGGSJd7V7GuTvD43FFU2kqd-FwLlC1QFg&_nc_ht=scontent.fsgn2-2.fna&oh=9b191b6d4cb080f9f4698006f4987013&oe=5D1815E8",
-    wish: ""
+    wish: "Cái gì cũng phải đẹp."
   },
   linhkim: {
     name: "Linh Kim",
@@ -38,7 +38,7 @@ const dataUser = {
     name: "Hạ Nhục",
     avatar:
       "https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.15752-9/53226193_625977864539273_8921644060255453184_n.jpg?_nc_cat=107&_nc_oc=AQllLbbTNV76NFI1hmDNIWuvjKOlIU-CkODz-LG13k5dh4xGVmD0qXNHOggDaoutTQM&_nc_ht=scontent.fsgn2-1.fna&oh=776c628b5f1a8ecf02cae32af75df0bf&oe=5D172235",
-    wish: "...chưa nghĩ ra"
+    wish: "lồi mồm"
   },
   trang: {
     name: "Cáo Trắng",
@@ -55,11 +55,11 @@ class Homepage extends React.Component {
   }
 
   renderGroupAvatarAE() {
-    return <div style={styles.groupAvaLeft}>ava ae</div>;
+    return <div style={styles.groupAvaLeft}></div>;
   }
 
   renderGroupAvatarCE() {
-    return <div style={styles.groupAvaRight}>ava ce</div>;
+    return <div style={styles.groupAvaRight}></div>;
   }
 
   renderContentWish() {
@@ -68,7 +68,10 @@ class Homepage extends React.Component {
         <div style={styles.wrapperWish}>
           <div style={styles.textWish1}>Chúc một nửa của Stockbook</div>
           <div style={styles.textWish2}>
-            Xinh đẹp, mạnh khỏe, hạnh phúc và thành công
+            ***<br></br>Luôn xinh đẹp, mạnh khỏe, hạnh phúc và thành công<br></br>***
+          </div>
+          <div>
+            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/53251496_2242236039325353_3304739783925825536_n.jpg?_nc_cat=105&_nc_oc=AQmRFrWKnCERMmaSt9jUKxFklYyDIPa0WeknOBTQK6iwRRyEgJM6_phl8gJrW75SMEc&_nc_ht=scontent.fhan2-4.fna&oh=ddc24b08c7bad471fbdca7614d67b656&oe=5D1AD900" alt="Stockbook" width="100%"></img>
           </div>
         </div>
         <div style={styles.groupDacBiet}>
@@ -98,7 +101,7 @@ class Homepage extends React.Component {
     return (
       <div style={styles.screen2}>
         <div style={styles.groupLeft}>
-          <div style={styles.fullname}>{`Chúc ${user.name}`}</div>
+          <div style={styles.fullname}>{`Chúc `}<font color="red">{`${user.name}`}</font></div>
           <div style={styles.wishContent}>{user.wish}</div>
         </div>
         <img style={styles.imageRight} src={user.avatar} alt="avatar" />
