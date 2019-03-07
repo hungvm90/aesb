@@ -21,7 +21,8 @@ export default {
     borderRadius: 60
   },
   wrapperInputName: {
-    marginLeft: 30
+    marginLeft: 30,
+    width: "50%"
   },
   labelInput: {
     marginBottom: 10,

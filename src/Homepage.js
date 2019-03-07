@@ -2,6 +2,7 @@ import React from "react";
 import _ from "lodash";
 
 import avaHai from "./static/avaHai.jpg";
+import avaHung from "./static/avaHung.jpg";
 import styles from "./Homepage.styles";
 
 function xoaDau(str) {
@@ -90,11 +91,16 @@ class Homepage extends React.Component {
   }
 
   renderGroupFail() {
-    return <div>Sai rồi kưng ơi</div>;
+    return (
+      <div style={styles.wrapperPage}>
+        <img style={styles.avatar} src={avaHung} alt="Hung's avatar" />
+        <div style={styles.wrapperInputName}>Sai rồi kưng ơi</div>
+      </div>
+    );
   }
 
-  renderContentPage() {
-    const { name, isFail } = this.state;
+  renderInputName() {
+    const { name } = this.state;
     return (
       <div style={styles.wrapperPage}>
         <img style={styles.avatar} src={avaHai} alt="Hai's avatar" />
@@ -108,16 +114,17 @@ class Homepage extends React.Component {
             onKeyPress={this.onKeyPress}
           />
         </div>
-        {isFail ? this.renderGroupFail() : null}
       </div>
     );
   }
 
   render() {
+    const { isFail } = this.state;
     return (
       <div style={styles.container}>
         <h1 style={styles.title}>Stockbook 08/03/2019</h1>
-        {this.renderContentPage()}
+        {this.renderInputName()}
+        {isFail ? this.renderGroupFail() : null}
       </div>
     );
   }
