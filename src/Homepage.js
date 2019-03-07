@@ -5,6 +5,12 @@ import avaHai from "./static/avaHai.jpg";
 import avaHung from "./static/avaHung.jpg";
 import styles from "./Homepage.styles";
 
+const messageFail = [
+  "Bạn là ai? bạn có phải stockbooker không? bạn đi ra đi :v.",
+  "Sai rồi, ahihi đồ ngốc",
+  "Sai nữa là nhịn đó"
+];
+
 function xoaDau(str) {
   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
   str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
@@ -28,7 +34,7 @@ const temp = {
   linhhoai: ["tranhoailinh", "linhhoai", "linhcoi"],
   linhkim: ["trankimlinh", "linhkim", "linhbe"],
   thuychip: ["phamthithuy", "thuy", "thuychip"],
-  mai: ["daothanhmai", "daothithanhmai", "mai", "maipattie"],
+  mai: ["daothanhmai", "daothithanhmai", "mai", "maipattie", "maimoi"],
   van: ["chuthikhanhvan", "chukhanhvan", "van", "hanhat", "ngaynanglen"],
   trang: [
     "nguyencaothuytrang",
@@ -63,6 +69,7 @@ class Homepage extends React.Component {
       name: "",
       isFail: false
     };
+    this.fail = -1;
 
     this.onChangeName = this.onChangeName.bind(this);
     this.onKeyPress = this.onKeyPress.bind(this);
@@ -86,7 +93,7 @@ class Homepage extends React.Component {
       history.push(`/chuc-mung/${nickname}`);
       return;
     }
-
+    this.fail += 1;
     this.setState({ isFail: true });
   }
 
@@ -94,7 +101,9 @@ class Homepage extends React.Component {
     return (
       <div style={styles.wrapperPage}>
         <img style={styles.avatar} src={avaHung} alt="Hung's avatar" />
-        <div style={styles.wrapperInputName}>Sai rồi kưng ơi</div>
+        <div style={styles.wrapperInputName}>
+          {messageFail[this.fail % messageFail.length]}
+        </div>
       </div>
     );
   }
