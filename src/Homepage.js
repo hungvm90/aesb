@@ -83,7 +83,7 @@ class Homepage extends React.Component {
     const { history } = this.props;
     const nickname = checkIsNamePass(this.state.name);
     if (nickname) {
-      history.push("/chuc-mung", { nickname });
+      history.push(`/chuc-mung/${nickname}`);
       return;
     }
 

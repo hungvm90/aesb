@@ -6,10 +6,6 @@ export default {
     display: "flex",
     flexDirection: "row"
   },
-  screen2: {
-    width: "100vw",
-    minHeight: "100vh"
-  },
   groupAvaLeft: {
     flex: 1
   },
@@ -51,5 +47,18 @@ export default {
     fontSize: 50,
     fontWeight: 600,
     margin: "0 50px"
+  },
+  screen2: {
+    width: "100vw",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  groupLeft: {
+    flex: 1
+  },
+  imageRight: {
+    flex: 1
   }
 };

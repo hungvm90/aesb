@@ -10,8 +10,7 @@ function AppRouter() {
     <Router>
       <div>
         <Route path="/" exact component={Homepage} />
-        <Route path="/chuc-mung/" component={Success} />
-        <Route path="/sai-roi/" component={Failure} />
+        <Route path="/chuc-mung/:nickname" component={Success} />
       </div>
     </Router>
   );
