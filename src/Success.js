@@ -7,7 +7,7 @@ const dataUser = {
   huyenho: {
     name: "Chị Huyền",
     avatar:
-      "https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.15752-9/53337696_408066763334542_558182299204583424_n.jpg?_nc_cat=104&_nc_oc=AQlspzImONGhc0nzjaRheQeOgB_O_JA3KJLuMRf03_y47W8L72t7HnObL_g9YG3bViM&_nc_ht=scontent.fsgn2-1.fna&oh=ecb92fae379f2883f6a614a17e591439&oe=5CE12516",
+      "https://scontent-hkg3-1.xx.fbcdn.net/v/t1.15752-9/53347518_1167041900142950_5814929442933309440_n.jpg?_nc_cat=107&_nc_oc=AQmqiGq-_w0BIHnczk6-2fO7SlFAQuAZqHGHNRjxidr1vaNNE8Pr5p44ACFkor849hc&_nc_ht=scontent-hkg3-1.xx&oh=135f5e05db1703e146b39dc3cfa8910c&oe=5CE2C6FD",
     wish: "An lạc"
   },
   linhhoai: {
