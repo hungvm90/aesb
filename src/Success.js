@@ -71,7 +71,7 @@ class Homepage extends React.Component {
             ***<br></br>Luôn xinh đẹp, mạnh khỏe, hạnh phúc và thành công<br></br>***
           </div>
           <div>
-            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/53251496_2242236039325353_3304739783925825536_n.jpg?_nc_cat=105&_nc_oc=AQmRFrWKnCERMmaSt9jUKxFklYyDIPa0WeknOBTQK6iwRRyEgJM6_phl8gJrW75SMEc&_nc_ht=scontent.fhan2-4.fna&oh=ddc24b08c7bad471fbdca7614d67b656&oe=5D1AD900" alt="Stockbook" width="100%"></img>
+            <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.15752-9/53510732_820273494992743_197202646006759424_n.jpg?_nc_cat=106&_nc_oc=AQlbLyzouwCKW1CWqjaBDCKwoDuspoPTaZhLEiKeZ8NbA5tdK8w25jaNXw_Y-zzsjxs&_nc_ht=scontent-hkg3-1.xx&oh=da3d7039fdd2ca2997191a799b50e76d&oe=5D189047" alt="Stockbook" width="100%"></img>
           </div>
         </div>
         <div style={styles.groupDacBiet}>
